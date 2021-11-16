@@ -40,9 +40,12 @@
   7.
  # Partie #2
  Quelle est l’architecture de données de ce « data pipeline » ?
-1. Ingestion - 
-
-3. Stockage ?
-4. Transformation ?
-5. Exposition ?
+1. Ingestion - récupérer et importer toutes les données brutes depuis les sources de données
+ Outil utilisé : AWS Kinesis Data Stream, Kinesis Delivery Stream, 
+3. Stockage - stocker les données
+Outil utilisé : AWS S3 Bucket
+5. Transformation - traiter les données 
+Outil utilisé : AWS Kinesis Data Analytics
+7. Exposition - accès au résultat de transformation des données
+Outil utilisé : Requetes SQL
  
