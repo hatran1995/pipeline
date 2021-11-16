@@ -5,7 +5,7 @@
   il manque le datastream pour la réception de flux de données et la destination du pipeline
 2. On va créer
  - un fichier datastream :  kinesis_datastream.tf
- # Code : 
+ // Code : 
                  resource "aws_kinesis_stream" "kinesis_input_stream" {
                   name        = "input-stream"
                   shard_count = 1
@@ -23,8 +23,8 @@
                 }
 
  - un fichier de destination S3 bucket : destination_s3_bucket.tf
-  # Code :  # Create a S3 bucket - destination of the data pipeline
-# Create a S3 bucket - destination of the data pipeline
+// Code :  # Create a S3 bucket - destination of the data pipeline
+
             resource "aws_s3_bucket" "summary_destination" {
               bucket = "analytics-destination-ha"
               acl    = "private"
